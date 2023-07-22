@@ -12,14 +12,17 @@
         h2 {
             font-size: 30px;
             margin-bottom: 40px;
+            overflow-y: hidden;
             }
             .inner_icon {
                 display: flex;
                 flex-direction: row;
                 padding: 10px;
+                align-items: center;
                 p {
                     text-align: left;
                     padding-left: 10px;
+                    margin-bottom: 2px;
                     }
                 }
     }
@@ -53,3 +56,6 @@
         cursor: pointer;
         }
     }
+
+
+    
