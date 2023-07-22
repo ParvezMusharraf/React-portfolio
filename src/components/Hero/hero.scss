@@ -1,0 +1,33 @@
+.hero {
+    background-color: #f0f0f0;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: #323232;
+    text-align: left;
+    font-weight: bold;
+    .text{
+        margin-left: 80px;
+
+        h2{
+                overflow-y: hidden;
+                font-weight: bold;
+        }
+        h1{
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-family: "Geologica", sans-serif;
+            font-weight: bold;
+        }
+        p {
+            font-size: 24px;
+            margin-bottom: 40px;
+            font-family: "Geologica", sans-serif;
+            font-weight: bold;
+          }
+    }
+  }
