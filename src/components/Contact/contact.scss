@@ -57,5 +57,10 @@
         }
     }
 
-
+    @media screen and (max-width:787px) {
+        .contact{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
     

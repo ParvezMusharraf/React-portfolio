@@ -19,3 +19,16 @@
         }
     }
 }
+
+@media only screen and (max-width:787px){
+        .app{
+            .sections{
+                height: 100dvh;
+                >*{
+                    height: auto;
+                    scroll-snap-align: none;
+                }
+            }
+            
+        }
+}
