@@ -137,3 +137,17 @@
         }
       }
     }
+
+    @media only screen and (max-width:300px){
+      .about{
+        .about_left{
+          h2{
+            margin-left: 10%;
+          }
+          p{
+            width: 100%;
+            margin-left: 10%;
+          }
+        }
+      }
+    }

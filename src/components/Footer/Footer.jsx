@@ -4,6 +4,7 @@ export default function Footer() {
   return (
     <div className='footer'>
       <div className="heading">
+        <h5>Connect With Me</h5>
         <i title="Connect" className="fa-solid fa-down-long"></i>
       </div>
     <div className="icons" >

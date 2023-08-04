@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="text" id="text" >
         <h2>Hello, My name is</h2>
         <h1>Parvez Musharraf</h1>
-        <p>and i am frontend developer</p>
+        <p>and I am frontend developer with passion for building beautiful and user-friendly website. </p>
     </div>
     </div>
   )

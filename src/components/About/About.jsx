@@ -5,8 +5,8 @@ export default function About() {
     <div className='about' id='about'>
       <section class="about_left " id="about-left">
       <h2>About Me</h2>
-      <p>Hello there I have completed my bachlors degree in <strong>BCA</strong> last year and I am a Front-End
-        developer, and I love to write a code for web development, and i have experties in such languages and
+      <p>Hello there I have completed my bachlors degree in <strong>BCA</strong> In year 2022 and I am a Front-End
+        developer, and I am excited to put my skills to use in professional setting,I am quik learner and a also ready to become a good team member,I am confident that I can be a valuable asset to any web development team. I have expertice in such languages and
         technologys, HTML, Css, javascript, reactjs, Bootstrap, git/github. </p>
       <button><a href="#contact">Contact now</a></button>
     </section>

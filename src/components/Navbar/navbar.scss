@@ -111,3 +111,15 @@
         }
     }
 }
+
+@media only screen and (max-width:301px){
+    .navbar{
+        .wrapper{
+            .left{
+                .itemContainer{
+                    margin-left:0;
+                }
+            }
+        }
+    }
+}
