@@ -1,9 +1,9 @@
-
+@import "./../../global.scss";
 
 .menu{
     width: 300px;
     height: 100vh;
-    background-color: #323232;
+    background-color: $SecMainColor;
     position: fixed;
     top: 0;
     right: -300px;

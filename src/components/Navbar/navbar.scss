@@ -1,9 +1,10 @@
+@import "./../../global.scss";
 
 .navbar{
     height: 70px;
     width: 100%;
     background-color: hsl(0, 0%, 94%);
-    color: #323232;
+    color: $SecMainColor;
     position: fixed;
     top: 0;
     overflow-y: hidden;
@@ -59,7 +60,7 @@
                 span{
                     width: 100%;
                     height: 3px;
-                    background-color: #323232;
+                    background-color: $SecMainColor;
                     transform-origin: left;
                     transition: all 2s ease;
                 }
@@ -68,7 +69,7 @@
         }
     }
     &.active{
-        background-color: #323232;
+        background-color: $SecMainColor;
         color: white;
         .hamburger{
             span{

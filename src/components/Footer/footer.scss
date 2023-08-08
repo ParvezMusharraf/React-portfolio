@@ -1,8 +1,10 @@
+@import "./../../global.scss";
+
 .footer{
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  background-color: #333;
+  background-color: $SecMainColor;
 
     .heading{
       display: flex;
@@ -13,7 +15,7 @@
       margin-top: 40px;
 
       h5{
-        color:#fff;
+        color:$mainColor;
         overflow-y: hidden;   
         font-family: Arial, Helvetica, sans-serif;
       }
@@ -21,7 +23,7 @@
         opacity: 0.8;
       }
       .fa-down-long{
-        color:#fff;
+        color:$mainColor;
         margin-left: 10px;
       }
     }
@@ -38,15 +40,15 @@
         opacity: 0.7;
         
         &:hover{
-          color: #fff;
+          color: $mainColor;
           opacity: 1;
-          border-bottom: 1px solid #fff;
+          border-bottom: 1px solid $mainColor;
           }
       }
     }
     .footer {
-        background-color: #333;
-        color: #fff;
+        background-color: $SecMainColor;
+        color: $mainColor;
         padding: 20px;
         text-align: center;
       }

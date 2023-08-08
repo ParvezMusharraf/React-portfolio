@@ -1,5 +1,7 @@
+@import "./../../global.scss";
+
 .hero {
-    background-color: #f0f0f0;
+    background-color: $mainColor;
     background-position: center;
     width: 100vw;
     height: 100vh;
@@ -7,7 +9,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    color: #323232;
+    color: $SecMainColor;
     text-align: left;
     font-weight: bold;
     .text{
