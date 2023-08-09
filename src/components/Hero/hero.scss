@@ -1,6 +1,7 @@
 @import "./../../global.scss";
 
 .hero {
+    // background: url(https://themewagon.github.io/satner/img/banner/home-banner.png);
     background-color: $mainColor;
     background-position: center;
     width: 100vw;
@@ -8,12 +9,15 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    flex-direction: column;
-    color: $SecMainColor;
+    flex-direction: row;
+    color: #000;
     text-align: left;
     font-weight: bold;
     .text{
+        margin-top: 12%;
         margin-left: 80px;
+        font-family: "Roboto", sans-serif;
+
 
         h2{
                 overflow-y: hidden;
@@ -34,11 +38,23 @@
             font-weight: bold;
             }
     }
+    .right_img{
+        margin-top: 50px;
+        max-width: 100%;
+        height: auto;
+    img{
+        vertical-align: middle;
+        width: 80%;
+        overflow-x: hidden;
+        height: auto;
+    }
+    }
     }
 
 
     @media screen and (max-width:787px) {
     .hero{
+        flex-direction: column;
         .text{
             margin-top: 200px;
         }

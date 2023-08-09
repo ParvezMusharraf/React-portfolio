@@ -3,8 +3,8 @@
 .navbar{
     height: 70px;
     width: 100%;
-    background-color: hsl(0, 0%, 94%);
-    color: $SecMainColor;
+    background-color: hsl(0, 0%, 98%);
+    color: #000;
     position: fixed;
     top: 0;
     overflow-y: hidden;
@@ -26,7 +26,7 @@
                 font-size: 30px;
                 font-weight: 700;
                 text-decoration: none;
-                color: inherit;
+                color: $SecMainColor;
                 margin-right: 40px;
             }
 

@@ -8,7 +8,7 @@ export default function About() {
       <p>Hello there I have completed my bachlors degree in <strong>BCA</strong> In year 2022 and I am a Front-End
         developer, and I am excited to put my skills to use in professional setting,I am quik learner and a also ready to become a good team member,I am confident that I can be a valuable asset to any web development team. I have expertice in such languages and
         technologys, HTML, Css, javascript, reactjs, Bootstrap, git/github. </p>
-      <button><a href="#contact">Contact now</a></button>
+      <button className="btn"><a href="#contact">Contact now</a></button>
     </section>
     <section class="about_right " id="about_right">
       <p>html</p>

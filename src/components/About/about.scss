@@ -32,20 +32,21 @@
           }
 
           button {
-            padding: 4px;
-            background-color: $mainColor;
-            border-radius: 10px;
-            border: none;
-            font-family: Arial, sans-serif;
-            font-size: 20px;
-            float: left;
-            margin: 20px 0px 0 80px;
-            box-shadow: 0px 4px 4px rgba(192, 192, 192, 0.25);
-            transition: border 1s;
+              background: #ffffff;
+              text-transform: uppercase;
+              color: #222222;
+              border-radius: 5px;
+              line-height: 48px;
+              font-size: 14px;
+              font-family: "Rubik", sans-serif;
+              padding: 0px 38px;
+              cursor: pointer;
+              float: left;
+              margin-left: 80px;
                     a {
                         text-decoration: none;
                         opacity: 0.75;
-                        color: #323232;
+                        color: inherit;
                         transition: 0.5s ease;
 
                     }&:hover{
