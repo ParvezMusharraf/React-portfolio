@@ -18,7 +18,7 @@ function App() {
               <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu}/>
               <Menu openMenu={openMenu} setOpenMenu={setOpenMenu}/>
         <div className="sections">
-        <Hero/>
+        <Hero name={"Parvez Musharraf"} role={"Frontend Developer"}/>
         <About/>
         <Services/>
         <Contact/>
