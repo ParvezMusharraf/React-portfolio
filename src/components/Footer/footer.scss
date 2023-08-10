@@ -1,23 +1,22 @@
 @import "./../../global.scss";
 
 .footer{
+  justify-content: center;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  background-color: $SecMainColor;
 
     .heading{
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      opacity: 0.5;
-      margin-top: 40px;
+      opacity: 1;
+      margin-top: 20px;
 
-      h5{
-        color:$mainColor;
+      h4{
+        color:$SecMainColor;
         overflow-y: hidden;   
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Rubik", sans-serif;
       }
       &:hover{
         opacity: 0.8;
@@ -29,27 +28,37 @@
     }
     .icons{
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
       flex-direction: row;
+      overflow-y: hidden;
       align-items: center;
       a{
-        margin: 40px;
-        font-size: 100px;
+        margin: 10px;
+        font-size: 50px;
         padding: 20px;
         opacity: 0.7;
+        color: #788489;
         
         &:hover{
-          color: $mainColor;
+          color: $SecMainColor;
           opacity: 1;
           border-bottom: 1px solid $mainColor;
           }
       }
     }
-    .footer {
+    .para{
+      font-family: "Rubik", sans-serif;
+      font-size: 18px;
+      padding: 10px;
+      color: #788489;
+        }
+    .CopyRight {
         background-color: $SecMainColor;
         color: $mainColor;
-        padding: 20px;
+        overflow-y: hidden;   
+        margin-top: 300px;
+        padding: 30px;
         text-align: center;
       }
 }
@@ -59,6 +68,12 @@
       .icons{
         flex-direction: column;
         align-items: center;
+      }
+      .para{
+        align-items: center;
+      }
+      .CopyRight{
+        margin-top: 0%;
       }
     }
 }
