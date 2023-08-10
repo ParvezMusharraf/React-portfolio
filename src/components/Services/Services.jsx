@@ -8,7 +8,7 @@ export default function Services() {
           <div class="row justify-content-center mt-2">
             <div class="col-lg-8 text-center align-items-center ">
               <div class="main_title">
-                <h2>service offers</h2>
+                <h3>service offers</h3>
                 <p>
                   Is give may shall likeness made yielding spirit a itself togeth created
                   after sea <br /> is in beast beginning signs open god you're gathering ithe </p>
@@ -41,7 +41,7 @@ export default function Services() {
               <div class="feature_item">
                 <img src="https://themewagon.github.io/satner/img/services/s4.png" alt="" />
                 <h4>REACT DEVELOPEMNT</h4>
-                <p>React's component-based architecture allows you to create modular and reusable code that can help you scale your web application as your business grows</p>
+                <p>React's component-based architecture allows you to create modular and reusable code that can help you scale your web application.</p>
               </div>
             </div>
           </div>

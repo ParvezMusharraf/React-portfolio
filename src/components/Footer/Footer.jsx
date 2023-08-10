@@ -13,9 +13,9 @@ export default function Footer() {
         <a title="Linkedin" href="https://www.linkedin.com/in/parvez-musharraf-a94533252/"><i class="fa-brands fa-linkedin"></i></a>
         <a title="Instagram" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
       </div>
-      <div className="container">
-      <div className="para d-flex justify-content-center mt-2">
-        Hello every one thanks for visiting my portfolio site i made this website with Love and hope that you liked it.
+      <div className="container main">
+      <div className="para d-flex justify-content-center ">
+        <p>Hello every one thanks for visiting my portfolio site i made this website with Love and hope that you liked it.</p>
       </div>
       </div>
       <div className="CopyRight">
