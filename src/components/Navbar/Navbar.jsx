@@ -6,6 +6,7 @@ import { Mail, Person } from '@mui/icons-material';
 
 
 export default function Navbar({openMenu, setOpenMenu}) {
+
   return (
     <div className={"navbar " + (openMenu && "active")}>
     <div className="wrapper">

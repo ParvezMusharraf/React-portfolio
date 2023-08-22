@@ -8,13 +8,14 @@ import Services from './components/Services/Services';
 import Menu from './components/Menu/Menu';
 import "./app.scss"
 import { useState } from 'react';
+import {motion} from "framer-motion";
 
 
 function App() {
 
   const [openMenu,setOpenMenu]=useState(false)
   return (
-    <div className='app'>
+    <motion.div className='app'>
               <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu}/>
               <Menu openMenu={openMenu} setOpenMenu={setOpenMenu}/>
         <div className="sections">
@@ -24,7 +25,7 @@ function App() {
         <Contact/>
         <Footer/>
         </div>
-    </div>
+    </motion.div>
   );
 }
 
