@@ -7,3 +7,10 @@
   overflow: hidden;
   background-color: #ddd;
 }
+
+@media screen and (max-width:900px) {
+    .card-main{
+      margin-top: 20px;
+      width: 90vw;
+    }
+}

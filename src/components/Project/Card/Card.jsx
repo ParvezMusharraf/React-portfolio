@@ -8,7 +8,7 @@ import './Card.scss'
 const Cards = ({item}) => {
   return (
     <>
-    <div className="card mx-5  card-main">
+    <div className="card mx-5 card-main">
       <div className=" card-img-top h-50 overflow-hidden ">
         <img className='img-thumbnail' src={item.img} alt={item.name} />
       </div>

@@ -99,6 +99,9 @@
         flex-direction: column;
         .text{
             margin-top: 200px;
+            p{
+                width: auto;
+            }
         }
         .right_img{
           display: flex;

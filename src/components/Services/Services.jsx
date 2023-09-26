@@ -2,7 +2,8 @@ import "../Services/services.scss"
 import "./../../global.scss";
 import { useEffect,useRef } from 'react';
 import {motion,useInView,useAnimation } from "framer-motion";
-
+import services from "../../Data/ServiceData";
+import SercviceCard from "./SercviceCard";
 
 export default function Services() {
 
@@ -18,6 +19,8 @@ export default function Services() {
         slidesControls.start("visible");
       }
     },)
+
+   const Cardlist =services.map((cardItem)=><SercviceCard cardItem={cardItem} />)
 
   return (
     <div className='services' id='services'>
@@ -40,34 +43,7 @@ export default function Services() {
             </div>
           </div>
           <div class="row feature_inner" >
-            <div  class="col-lg-3 col-md-6">
-              <div class="feature_item">
-                <img src="https://themewagon.github.io/satner/img/services/s1.png" alt="" />
-                <h4>WEB DEVELOPMENT</h4>
-                <p>Detail-oriented Front End Developer working with HTML, CSS, Bootstrap, Javascript, JQuery, and React.  </p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="feature_item">
-                <img src="https://themewagon.github.io/satner/img/services/s2.png" alt="" />
-                <h4>UI/UX DESIGN</h4>
-                <p>Passion for building beautiful and user-friendly website</p>
-              </div>
-            </div>
-            <div  class="col-lg-3 col-md-6">
-              <div class="feature_item">
-                <img src="https://themewagon.github.io/satner/img/services/s3.png" alt="" />
-                <h4>WEB DESIGN</h4>
-                <p>Good Knowladge of color is hope for better attractive designs</p>
-              </div>
-            </div>
-            <div  class="col-lg-3 col-md-6" >
-              <div class="feature_item">
-                <img src="https://themewagon.github.io/satner/img/services/s4.png" alt="" />
-                <h4>REACT DEVELOPEMNT</h4>
-                <p>React's component-based architecture allows you to create modular and reusable code that can help you scale your web application.</p>
-              </div>
-            </div>
+                  {Cardlist}
           </div>
         </motion.div>
       </section>
