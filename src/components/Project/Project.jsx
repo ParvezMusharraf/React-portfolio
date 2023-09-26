@@ -10,7 +10,7 @@ export default function Project() {
     <div className="Project" id='Project'>
       <section className='Projects-section'>
           <div className="heading d-flex justify-content-center align-items-center ">
-            <h3>Project</h3>
+            <p className="m-3 fw-bold border rounded p-2">Projects</p>
           </div>
           <div className="ProjectCards d-flex justify-content-even">
               {projectData.map((item)=><Card  item={item} />)}
