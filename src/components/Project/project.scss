@@ -1,1 +1,12 @@
 @import "./../../global.scss";
+
+.Project{
+    max-height: 100%;
+    max-width: 100%;
+    .ProjectCards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+}
