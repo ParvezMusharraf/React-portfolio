@@ -1,3 +1,12 @@
+# See it Live Here
+https://parvezmusharraf.github.io/React-portfolio/
+
+![PortFolio](https://github.com/ParvezMusharraf/React-portfolio/assets/98079017/d2e53f44-4029-4efd-b3af-c89e4db709d5)
+
+
+# Technology Used:
+Html , Scss , Javascript , Bootstrap, React Js Material Ui
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
