@@ -60,7 +60,7 @@ export default function About() {
 
       <p>React</p>
       <div class="container">
-        <div class="skills reactjs "><span>40%</span></div>
+        <div class="skills reactjs "><span>70%</span></div>
       </div>
 
       <p>Bootstrap</p>
