@@ -25,7 +25,7 @@ const services =[
     },
     {
         id:4,
-        titile:'REACT DEVELOPEMNT',
+        titile:'BACKEND DEVELOPMENT',
         discription:"React's component-based architecture allows you to create modular and reusable code that can help you scale your web application.",
         img:s4
     },

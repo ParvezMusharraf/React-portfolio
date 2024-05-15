@@ -38,7 +38,7 @@ export default function Services() {
                 <h3>service offers</h3>
                 <p>
                 Passion for building beautiful and user-friendly website Using such technologys like
-                <br /><span> HTML, CSS, JAVASCRIPT, BOOTSTRAP, REACT </span></p>
+                <br /><span> HTML, CSS, JAVASCRIPT, BOOTSTRAP, REACT ,NODE , EXPRESS</span></p>
               </div>
             </div>
           </div>

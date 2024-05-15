@@ -2,7 +2,7 @@ import './hero.scss'
 import { useEffect,useRef } from 'react';
 import {motion,useInView,useAnimation } from "framer-motion";
 
-export default function Hero(props) {
+export default function Hero({name,role}) {
 
   const ref = useRef(null);
   const isInView = useInView(ref,{once:true});
@@ -29,8 +29,8 @@ export default function Hero(props) {
               transition={{duration:0.5,delay:0.34}}
       >
         <h2>Hello, My name is</h2>
-        <h1>{props.name}</h1>
-        <p>and I am {props.role} with passion for building beautiful and user-friendly website   . </p>
+        <h1>{name}</h1>
+        <p>and I am {role} with passion for building beautiful and user-friendly website   . </p>
     </motion.div>
     <motion.div className="right_img" 
      variants={{
