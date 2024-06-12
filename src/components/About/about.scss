@@ -9,7 +9,7 @@
     background-color:$SecMainColor;
     color: $mainColor;
     width: 100vw;
-    height: 100vh;
+    height: auto;
 
     .about_left {
         width: 60vw;
@@ -96,12 +96,27 @@
                     padding: 2px;
                   }
                   .reactjs {
-                    width: 70%;
+                    width: 80%;
                     background-color: $mainColor;
                     padding: 2px;
                   }
                   .bootstrap {
-                    width: 70%;
+                    width: 80%;
+                    background-color: $mainColor;
+                    padding: 2px;
+                  }
+                  .Node {
+                    width: 60%;
+                    background-color: $mainColor;
+                    padding: 2px;
+                  }
+                  .express {
+                    width: 50%;
+                    background-color: $mainColor;
+                    padding: 2px;
+                  }
+                  .mongoDb {
+                    width: 50%;
                     background-color: $mainColor;
                     padding: 2px;
                   }
