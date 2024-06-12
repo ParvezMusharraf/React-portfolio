@@ -1,31 +1,23 @@
-import React from 'react'
-import './Card.scss'
+import React from 'react';
+import './Card.scss';
 
-
-
-
-
-const Cards = ({item}) => {
+const Cards = ({ item }) => {
   return (
-    <>
-    <div className="card mx-5 card-main">
-      <div className=" card-img-top h-50 overflow-hidden ">
-        <img className='img-thumbnail' src={item.img} alt={item.name} />
+    <div className="card-main">
+      <div className="card-img">
+        <img className="img-fixed" src={item.img} alt={item.name} />
       </div>
-      <div className="card-body col-12 overflow-hidden ">
-        <p className="card-title fw-bold text-wrap" style={{fontSize:"18px"}} >{item.name}</p>
-        <p className="techno-used" style={{fontSize:"14px"}}>Technology-Used</p>
-        <p className="card-para text-primary">
-          {item.TechnologyUsed}
-        </p>
-      <div className="buttons">
-      <a className='btn btn-primary m-2' href={item.Live} >Live</a>
-      <a className='btn btn-primary m-2' href={item.repoLink} >Repo</a>
-      </div>
+      <div className="card-content">
+        <h3 className="card-title">{item.name}</h3>
+        <p className="techno-used">Technology Used</p>
+        <p className="card-para">{item.TechnologyUsed}</p>
+        <div className="buttons">
+          <a className="btn btn-primary" href={item.Live}>Live</a>
+          <a className="btn btn-secondary" href={item.repoLink}>Repo</a>
+        </div>
       </div>
     </div>
-    </>
-  )
-}
+  );
+};
 
-export default Cards
+export default Cards;

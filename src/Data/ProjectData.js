@@ -20,6 +20,14 @@ const ProjectData = [
     TechnologyUsed:"Html , Css , Javascript ,React , Bootstrap.",
     img:flyFinder,
     },
+    { 
+    id: 3,
+    Live:'https://parvezmusharraf.github.io/Fly_Finders-react/',
+    name:'Flight Booking System ',
+    repoLink:'https://github.com/ParvezMusharraf/Fly_Finders-react/',
+    TechnologyUsed:"Html , Css , Javascript ,React , Bootstrap.",
+    img:flyFinder,
+    },
 
 ]
 
