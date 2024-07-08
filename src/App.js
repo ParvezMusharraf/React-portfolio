@@ -10,7 +10,7 @@ import Menu from './components/Menu/Menu';
 import "./app.scss"
 import { useState } from 'react';
 import {motion} from "framer-motion";
-
+import SkillsSection from './components/skills/SkillsSection';
 
 function App() {
 
@@ -22,6 +22,7 @@ function App() {
         <div className="sections">
         <Hero name={"Parvez Musharraf"} role={"Frontend Developer"}/>
         <About/>
+        <SkillsSection/>
         <Project/>
         <Services/>
         <Contact/>

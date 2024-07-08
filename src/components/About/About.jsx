@@ -14,13 +14,13 @@ export default function About() {
       mainControls.start("visible");
       slidesControls.start("visible");
     }
-  });
+  }, [isInView, mainControls, slidesControls]);
 
   return (
     <div className="about" id="about">
       <motion.section
         ref={ref}
-        class="about_left "
+        className="about_left"
         id="about-left"
         variants={{
           hidden: { opacity: 0, y: 75 },
@@ -51,76 +51,25 @@ export default function About() {
         </button>
       </motion.section>
       <motion.section
-        ref={ref}
-        class="about_right "
-        id="about_right"
+        className="experience"
+        id="experience"
         variants={{
           hidden: { opacity: 0, y: 75 },
           visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"
-        animate={mainControls}
-        transition={{ duration: 0.5, delay: 0.34 }}
+        animate={slidesControls}
+        transition={{ duration: 0.5, delay: 0.5 }}
       >
-        <p>html</p>
-        <div class="container">
-          <div class="skills html">
-            <span>90%</span>
-          </div>
-        </div>
-
-        <p>CSS</p>
-        <div class="container">
-          <div class="skills css">
-            {" "}
-            <span>80%</span>{" "}
-          </div>
-        </div>
-
-        <p>JavaScript</p>
-        <div class="container">
-          <div class="skills js">
-            {" "}
-            <span>65%</span>
-          </div>
-        </div>
-
-        <p>React</p>
-        <div class="container">
-          <div class="skills reactjs ">
-            <span>80%</span>
-          </div>
-        </div>
-
-        <p>Bootstrap</p>
-        <div class="container">
-          <div class="skills bootstrap ">
-            <span>80%</span>
-          </div>
-        </div>
-        <p>Node js</p>
-        <div class="container">
-          <div class="skills Node ">
-            <span>60%</span>
-          </div>
-        </div>
-        <p>Express Js</p>
-        <div class="container">
-          <div class="skills express ">
-            <span>60%</span>
-          </div>
-        </div>
-        <p>Mongodb</p>
-        <div class="container">
-          <div class="skills mongoDb ">
-            <span>50%</span>
-          </div>
-        </div>
-        <p>Git/Github</p>
-        <div class="container">
-          <div class="skills git ">
-            <span>65%</span>
-          </div>
+        <h2>Experience</h2>
+        <div className="experience_item">
+          <h3>Front-End Developer at Pixonix Software Technologies</h3>
+          <p>January 2023 - Present</p>
+          <ul>
+            <li>Developed and maintained web applications using ReactJS, HTML, CSS, and JavaScript.</li>
+            <li>Collaborated with the design team to create user-friendly interfaces.</li>
+            <li>Improved application performance and user experience.</li>
+          </ul>
         </div>
       </motion.section>
     </div>

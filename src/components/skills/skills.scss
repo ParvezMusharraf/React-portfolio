@@ -1,0 +1,45 @@
+.SkillsSection {
+    padding: 20px;
+    background-color: #f9f9f9;
+  
+    .Projects-section {
+      .heading {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+    }
+  
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      
+      .skill-box {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        width: 150px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+        .skill-logo {
+          width: 50px;
+          height: 50px;
+          object-fit: contain;
+          margin-bottom: 10px;
+        }
+  
+        .skill-name {
+          font-size: 1.2rem;
+          margin-bottom: 5px;
+        }
+  
+        .skill-rating {
+          color: #f39c12;
+        }
+      }
+    }
+  }
+  
