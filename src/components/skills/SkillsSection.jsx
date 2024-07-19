@@ -1,5 +1,7 @@
 import React from 'react';
 import './skills.scss'
+import { useEffect,useRef } from 'react';
+import {motion,useInView,useAnimation } from "framer-motion";
 
 const skills = [
   { logo: <i class="fa-brands fa-html5" style={{color:"rgb(255 133 59)",fontSize:"50px"}}></i>, name: 'Html', rating: 4 },
@@ -23,17 +25,44 @@ const SkillBox = ({ logo, name, rating }) => (
 );
 
 export default function SkillsSection() {
+
+  const ref = useRef(null);
+  const isInView = useInView(ref,{once:true});
+  
+  const mainControls = useAnimation();
+  const slidesControls = useAnimation();
+  
+    useEffect(()=>{
+      if(isInView){
+        mainControls.start("visible");
+        slidesControls.start("visible");
+      }
+    },)
   return (
     <div className="SkillsSection" id='SkillsSection'>
       <section className='Projects-section'>
-        <div className="heading d-flex justify-content-center align-items-center ">
+        <motion.div ref={ref} className="heading d-flex justify-content-center align-items-center "
+              variants={{
+                hidden:{opacity:0,y:75},
+                visible:{opacity:1, y:0}
+              }}
+              initial="hidden"
+                      animate={mainControls}
+                      transition={{duration:0.5,delay:0.34}}>
           Skills
-        </div>
-        <div className="skills-container">
+        </motion.div>
+        <motion.div  className="skills-container"
+         variants={{
+          hidden:{opacity:0,y:75},
+          visible:{opacity:1, y:0}
+        }}
+        initial="hidden"
+                animate={mainControls}
+                transition={{duration:0.5,delay:0.34}}>
           {skills.map((skill, index) => (
             <SkillBox key={index} {...skill} />
           ))}
-        </div>
+        </motion.div>
       </section>
     </div>
   );

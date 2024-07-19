@@ -10,9 +10,11 @@ export default function Menu({openMenu,setOpenMenu}) {
         <li onClick={()=>setOpenMenu(false)}>
           <a title='about' href="#about">About</a></li>
         <li onClick={()=>setOpenMenu(false)}>
+          <a title='about' href="#SkillsSection">Skills</a></li>
+        <li onClick={()=>setOpenMenu(false)}>
           <a title='services' href="#services">Services</a></li>
         <li onClick={()=>setOpenMenu(false)}>
-          <a title='Coming Soon' href="#Projects">Projects</a></li>
+          <a title='Projects' href="#Project">Projects</a></li>
         <li onClick={()=>setOpenMenu(false)}>
           <a title='Contact Me' href="#contact">Contact</a></li>
       </ul>
