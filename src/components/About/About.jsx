@@ -66,8 +66,14 @@ export default function About() {
           <h3>Front-End Developer at Pixonix Software Technologies</h3>
           <p>January 2023 - Present</p>
           <ul>
-            <li>Developed and maintained web applications using ReactJS, HTML, CSS, and JavaScript.</li>
-            <li>Collaborated with the design team to create user-friendly interfaces.</li>
+            <li>
+              Developed and maintained web applications using ReactJS, HTML,
+              CSS, and JavaScript.
+            </li>
+            <li>
+              Collaborated with the design team to create user-friendly
+              interfaces.
+            </li>
             <li>Improved application performance and user experience.</li>
           </ul>
         </div>
