@@ -1,133 +1,165 @@
 @import "./../../global.scss";
 
 .about {
-    padding: 80px 0;
-    text-align: center;
+  padding: 80px 5%;
+  text-align: left;
+  background-color: $SecMainColor;
+  color: $mainColor;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 3rem;
+
+  .about_left {
     display: flex;
+    justify-content: center;
+    align-items: start;
     flex-direction: column;
-    justify-content: space-between;
-    background-color:$SecMainColor;
-    color: $mainColor;
-    width: 100vw;
-    height: auto;
+    width: 100%;
 
-    .about_left {
-        width: auto;
-        margin-top: 30px;
+    .about_content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+      max-width: 900px;
+      text-align: start;
 
+      .profile_img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid $mainColor;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      .text {
         h2 {
-            font-size: 36px;
-            overflow-y: hidden;
-          }
-          
+          font-size: 36px;
+          margin-bottom: 10px;
+        }
+
         p {
-            font-size: 18px;
-            text-align: left;
-            margin-left: 80px;
-            padding-right: 200px;
-          }
+          font-size: 18px;
+          line-height: 1.5;
+          max-width: 600px;
+        }
+      }
+    }
 
-          button {
-              background: #ffffff;
-              text-transform: uppercase;
-              color: #222222;
-              border-radius: 5px;
-              line-height: 48px;
-              font-size: 14px;
-              font-family: "Rubik", sans-serif;
-              padding: 0px 38px;
-              cursor: pointer;
-              float: left;
-              margin-left: 80px;
-                    a {
-                        text-decoration: none;
-                        opacity: 0.75;
-                        color: inherit;
-                        transition: 0.5s ease;
+    button {
+      background: $mainColor;
+      color: white;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      margin-top: 10px;
+      transition: 0.3s ease-in-out;
 
-                    }&:hover{
-                        font-weight: bold;
-                        opacity: 1;
-                      }
-            }
+      &:hover {
+        background: darken($mainColor, 10%);
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+
+  .experience {
+    text-align: start;
+    width: 100%;
+    max-width: 900px;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .experience_container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .experience_card {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: translateY(-5px);
         }
 
-        .experience {
-          margin-top: 2rem;
-        
-          h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-          }
-        
-          .experience_item {
-            margin-bottom: 1.5rem;
-        
-            h3 {
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          font-size: 1rem;
+          margin-bottom: 0.5rem;
+          color: lighten($mainColor, 20%);
+        }
+
+        ul {
+          list-style: none;
+          padding-left: 0;
+          text-align: left;
+
+          li {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 20px;
+
+            &::before {
+              content: "•";
+              color: $mainColor;
               font-size: 1.5rem;
-              margin-bottom: 0.5rem;
+              position: absolute;
+              left: 0;
+              top: 0;
             }
-        
-            p {
-              font-size: 1rem;
-              margin-bottom: 0.5rem;
-            }
-        
-            ul {
-              list-style-type: none;
-              padding-left: 1.5rem;
-        
-              li {
-                font-size: 1rem;
-                margin-bottom: 0.5rem;
-              }
-            }
-          }
-        }
-    }
-
-
-
-    @media only screen and (max-width: 980px){
-      .about{
-        .about_left{
-          p{
-            padding-right: 100px;
           }
         }
       }
     }
+  }
+}
 
-    @media only screen and (max-width:786px){
-      .about{
-        flex-direction: column;
-        overflow-y: scroll;
-        justify-content: center;
-        align-items: center;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about {
+    padding: 50px 2rem;
 
-        .about_left{
-          margin: 10px;
-          width: 100%;
-          height:100%
-        }
-        .about_right{
-          width: 80%;
+    .about_content {
+      flex-direction: column;
+      text-align: center;
+
+      .profile_img {
+        width: 120px;
+        height: 120px;
+        display: none;
+      }
+
+      .text {
+        p {
+          text-align: left;
         }
       }
     }
-
-    @media only screen and (max-width:300px){
-      .about{
-        .about_left{
-          h2{
-            margin-left: 10%;
-          }
-          p{
-            width: 100%;
-            margin-left: 10%;
-          }
-        }
-      }
-    }
-
-    
+  }
+}
